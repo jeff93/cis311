@@ -1,0 +1,28 @@
+.content {
+  padding-top: 70px;
+  color: fuchsia;
+  font: bold;
+}
+
+.navbar-default {
+  border: none;
+}
+
+.bgimage {
+	background-image: url('http://ideamakers.biz/wp-content/uploads/house_party_background_40184_620_413.');
+	background-position: center;
+	background-size: cover;
+	height:50px;
+}
+
+.bgimagepage {
+	background-image: url('http://cdn.wallpapersafari.com/10/15/uQo6XD.png');
+	background-position: center;
+	background-size:inherit;
+}
+
+.titlefont 
+{
+ font-family:fantasy;
+ text-align: left;
+}
