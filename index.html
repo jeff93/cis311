@@ -1,78 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Bronco Function</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Home</title>
+ 
 </head>
+<body class = "bgimagepage">
 
-<nav class="navbar navbar-inverse navbar-fixed top">
+<nav class="bgimage navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <ul class="nav navbar-nav">
 
-<img alt="Brand" src="http://www.calpolyfcu.org/wp-content/uploads/2013/07/N1449_Panorama1_fhdr.jpg" width="1600">
+				
+      <li >
+      
+      
+<button type="button" onclick = "indexara.html" id = "Home"
+					aria-haspopup="true" aria-expanded="true"
+					class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn">Home
+					
+					
+</button>
+      
+      
+      </li>
+      <li class="dropdown">
 
-	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		
-		<div class="navbar-header">
-		
-			<button type="button" class="navbar-toggle collapsed"
-				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-				aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-		</div>
-		<div class="collapse navbar-collapse"
-			id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Podcast</a></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown" role="button" aria-haspopup="true"
-					aria-expanded="false">Go To <span class="caret"></span></a>
-					<ul class="dropdown-menu">
+					<button type="button" data-toggle = "dropdown" id = "About"
+					aria-haspopup="true" aria-expanded="true"
+					class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn">About
+					<span class="caret"></span>
+					
+					</button>
+
+					<ul class = "dropdown-menu" aria-labelledby = "About">
+					
+						<li class = "dropdown-header"></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="legal.html">Legal</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+					
+					</ul>
+      </li>
+      <li class="dropdown">
+
+					<button type="button" data-toggle = "dropdown" id = "Category"
+					aria-haspopup="true" aria-expanded="true"
+					class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn">Go To
+					<span class="caret"></span>
+					
+					</button>
+
+					<ul class = "dropdown-menu" aria-labelledby = "Category">
+						<li class = "dropdown-header">What are you looking for?</li>
 						<li><a href="#">Tonight</a></li>
 						<li><a href="#">Tomorrow</a></li>
 						<li><a href="#">Concerts</a></li>
-						<li><a href="#">Bars/Clubs</a></li>
+						<li><a href="#">Bars / Clubs</a></li>
 						<li><a href="#">House Parties</a></li>
-						<li><a href="#">Pool Parties</a></li>
+				 		<li><a href="#">Pool Parties</a></li>
 						<li><a href="#">Even Ratio</a></li>
-						<li><a href="#">21 and Over</a></li>
-						<li><a href="#">Memebers Only</a></li>
+						<li><a href="#">21 & Over</a></li>
+						<li><a href="#">Members Only</a></li>
 						<li><a href="#">? Secret</a></li>
-						<li><a href="#">Proof</a></li>
-						<li><a href="#">Map</a></li>
-						<li><a href="#">Hosts</a></li>
-						<li><a href="#">Security</a></li>
-						<li><a href="#">DJs</a></li>
-						<li><a href="#">Chat</a></li>
+						<li><a href="proof.html">Proof</a></li>
+						<li><a href="map.html">Map</a></li>
+						<li><a href="hosts.html">Hosts</a></li>
+						<li><a href="security.html">Security</a></li>
+						<li><a href="djs.html">DJs</a></li>
+						<li><a href="chat.html">Chat</a></li>
 					</ul>
-					</li>
-			</ul>
-			<form class="nav navbar-nav navbar-right">
-				<button type="button" class="btn btn-default navbar-btn">Sign
-					in</button>
-			</form>
-		</div>
-	</div>
+
+      </li> 
+      
+      <li>
+      
+      	<button type="button" data-toggle = "dropdown" id = "Podcast"
+					aria-haspopup="true" aria-expanded="true"
+					class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn">Podcast
+					<span class="caret"></span>
+					
+		</button>
+		
+		<ul class = "dropdown-menu" aria-labelledby = "Podcasts">
+						<li class = "dropdown-header">What are you looking for?</li>
+						<li><a href="#">This Week</a></li>
+						<li><a href="#">All</a></li>
+					</ul>
+      
+      </li>
+    </ul>    
+  </div>
 </nav>
-<body>
-	<div class="jumbotron">
-	
-		<div class="container text-center">
-			<h1>Billy Bronco Functions</h1>
-			<p>This website is dedicated to "networking" with fellow Cal Poly
-				Pomona students.</p>
 
-			<p>
-				<a class="btn btn-primary btn-lg" href="#" role="button">Get to know us</a>
-			</p>
+<div class="content container">
+  <div class="row ">
+    <section class="col-xs-12">
 
-		</div>
-	</div>
+<div class = "titlefont">
+<h2>Billy Bronco Functions</h2>
+</div>
 
+<b>Home</b>
+
+	</p>
+</p>
+
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
