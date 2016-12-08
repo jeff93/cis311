@@ -1,118 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<title>House Parties</title>
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.18.min.js"></script>
+<script id="facebook-jssdk" src="https://connect.facebook.net/en_US/all.js"></script>
 <meta charset="UTF-8">
-<title>Pool Parties</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<meta
+	http-equiv="X-UsA-Compatible"
+	content="IE=edge"
+><meta
+	name="viewport"
+	content="width=device-width, initial-scale=1"
+>
+<link
+	rel="stylesheet"
+	href="css/bootstrap.min.css"
+>
+<link
+	rel="stylesheet"
+	href="css/styles.css"
+>
+
+
+<!-- ----------------------------------------------NAVBAR------------------------------------ -->
+
 </head>
-<nav class="navbar navbar-inverse navbar-fixed top">
-	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed"
-				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-				aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<img alt="Brand"
-				src="http://cdn3.sportngin.com/attachments/photo/5240/9554/Cal_Poly_Pomona_D2_small.png">
+<body class="bgimagepage">
+
+
+	<div class="content container">
+
+		<div class="row ">
+
+			<section class="col-xs-12">
+
+
+				<nav class="bgimage navbar navbar-default navbar-fixed-top">
+					<div class="container">
+						<ul class="nav navbar-nav">
+
+
+<li >
+<button class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn" 
+
+onclick="location.href='index.html'">Home
+</button>
+
+</li>
+
+
+							<li class="dropdown">
+
+								<button
+									type="button"
+									data-toggle="dropdown"
+									id="About"
+									aria-haspopup="true"
+									aria-expanded="true"
+									class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn"
+								>
+									About <span class="caret"></span>
+
+								</button>
+
+								<ul
+									class="dropdown-menu"
+									aria-labelledby="About"
+								>
+
+									<li class="dropdown-header"></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Legal</a></li>
+									<li><a href="#">FAQ</a></li>
+
+								</ul>
+							</li>
+							<li class="dropdown">
+
+								<button
+									type="button"
+									data-toggle="dropdown"
+									id="Category"
+									aria-haspopup="true"
+									aria-expanded="true"
+									class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn"
+								>
+									Go To <span class="caret"></span>
+
+								</button>
+
+								<ul
+									class="dropdown-menu"
+									aria-labelledby="Category"
+								>
+									<li class="dropdown-header">What are you looking for?</li>
+									<li><a href="#">Tonight</a></li>
+									<li><a href="#">Tomorrow</a></li>
+									<li><a href="#">Concerts</a></li>
+									<li><a href="#">Bars / Clubs</a></li>
+									<li><a href="HouseParties.html">House Parties</a></li>
+									<li><a href="PoolParties.html">Pool Parties</a></li>
+									<li><a href="Even Ratio.html">Even Ratio</a></li>
+									<li><a href="21andOver.html">21 & Over</a></li>
+									<li><a href="#">Members Only</a></li>
+									<li><a href="#">? Secret</a></li>
+									<li><a href="proof.html">Proof</a></li>
+									<li><a href="map.html">Map</a></li>
+									<li><a href="hosts.html">Hosts</a></li>
+									<li><a href="security.html">Security</a></li>
+									<li><a href="djs.html">DJs</a></li>
+									<li><a href="chat.html">Chat</a></li>
+								</ul>
+
+							</li>
+
+							<li>
+
+								<button
+									type="button"
+									data-toggle="dropdown"
+									id="Podcast"
+									aria-haspopup="true"
+									aria-expanded="true"
+									class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn"
+								>
+									Podcast <span class="caret"></span>
+
+								</button>
+
+								<ul
+									class="dropdown-menu"
+									aria-labelledby="Podcasts"
+								>
+									<li class="dropdown-header">What are you looking for?</li>
+									<li><a href="#">This Week</a></li>
+									<li><a href="#">All</a></li>
+								</ul>
+
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+			</section>
 		</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse"
-			id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Podcast</a></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown" role="button" aria-haspopup="true"
-					aria-expanded="false">Go To <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Tonight</a></li>
-						<li><a href="#">Tomorrow</a></li>
-						<li><a href="#">Concerts</a></li>
-						<li><a href="#">Bars/Clubs</a></li>
-						<li><a href="#">House Parties</a></li>
-						<li><a href="#">Pool Parties</a></li>
-						<li><a href="#">Even Ratio</a></li>
-						<li><a href="#">21 and Over</a></li>
-						<li><a href="#">Memebers Only</a></li>
-						<li><a href="#">? Secret</a></li>
-						<li><a href="#">Proof</a></li>
-						<li><a href="#">Map</a></li>
-						<li><a href="#">Hosts</a></li>
-						<li><a href="#">Security</a></li>
-						<li><a href="#">DJs</a></li>
-						<li><a href="#">Chat</a></li>
-					</ul>
-					</li>
-			</ul>
+ <h1>Welcome to the House Party Hub!</h1> 
 
-			<form class="nav navbar-nav navbar-right">
-				<button type="button" class="btn btn-default navbar-btn">Sign
-					in</button>
-			</form>
- 	 
-	</div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<body>
-<div class="jumbotron">
-    <div class="container">
-    <h1>Welcome to the <img src="http://gotoburgas.com/uploads/post/c5d92f8805b892e8d86eb3778c81e123.jpg" class="img-responsive" alt="Responsive image">hub!</h1>
-    <h2> <small>Check out these listed house parties hosted by your fellow students!</small></h2>
-    <p>
-   
-  
-   </p>
-    
-    <p>If you want to post an event, please use the form below. </p>
-<div class="container-fluid">  
-    <form>
-  <div class="form-group">
-    <label for="InputEmail1">Please enter an Email address</label>
-    <input type="email" class="form-control" id="InputEmail1" aria-expanded="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-   </div>
-    <div class="form-group">
-    <label for="Textarea">Please provide the address of the event.</label>
-    <textarea class="form-control" id="Textarea" rows="3"></textarea>
-  </div>
-    <div class="form-group">
-    <label for="exampleInputFile">If you have a flyer or more info, upload it here!</label>
-    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-    <small id="fileHelp" class="form-text text-muted">Please use .JPEG or PDF files.</small>
-  </div>
-<div class="form-group">
-    <label for="exampleSelect1">Type of Event</label>
-    <select class="form-control" id="exampleSelect1">
-      <option>Frat Party</option>
-      <option>Sorority Party</option>
-      <option>Birthday Party</option>
-      <option>Other Party</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleSelect2">Event Ameneties</label>
-    <select multiple class="form-control" id="exampleSelect2">
-      <option>BYOB</option>
-      <option>Food will be provided</option>
-      <option>Kegs on deck</option>
-    </select>
-  </div>
-     <div class="form-group">
-    <label for="Textarea">Please describe the type of event.</label>
-    <textarea class="form-control" id="Textarea" rows="3"></textarea>
-  </div>
-  <p> If you're all done and ready to submit, click the button below! </p>
-  <button  type="submit" class="btn btn-primary">Submit</button>
- </form>
-  </div>  
-    </div>
+<img alt="Party" class="img-responsive" src="https://static.pexels.com/photos/37862/musician-rockstar-band-music-37862.jpeg">
 
+
+<!-- ----------------------------------------------DYNAMODB INPUT--------------------------------------------- -->
+
+
+	
+<div id="fb-root"></div>
+
+<br/>
+
+<div class="row padding ">
+	
+		<button class = "navbutton btn-large " id="login"> Facebook Login! </button>
+
+	
+</div>
+
+<p> 
+
+
+</p>
+<!-- ----------------------------start of row -->	<div class="row">
+	
+	
+
+<div class = "row">
+
+<div class = "col-xs-3 padding" >
+	First Name:
+	<input id="keyValue" type="text" />
+	<br /> 
+</div>
+
+<div class = "col-xs-3 padding" >
+	
+	Event Type:
+	<input id="attributeText" type="text" />
+	<br /> 
+	
+</div>	
+	
+<div class = "col-xs-3 padding" >
+	
+	Location:
+	<input id="valueText" type="text" />
+	<br />
+</div>	
+
+	
+</div>
+	
+	<div>
+	
+	<br/>
+	
+	|
+	<button class = "navbutton" id="putThis">Post!</button>
+	|
+	<button class = "navbutton" id="getThis">Retreive Post</button>
+	|
+	<button class = "navbutton" id="deleteThis">Delete Post</button>
+	|
+	
+	<p>
+	
+	
+	</p>
+	
+
+<p>
+
+	Use the form to post an Event!
+					
+					</p>  
+					
+					<p> or... </p>
+					
+					<p> Use the button below to check for Events! </p>
+					
+					<p> Check it out!</p>
+
+	
+ <p> <button id="showTable">Show Events</button>
+
+
+</p>
+
+
+
+	</div>
+	
+ </div>
+
+<div id="body"></div>
+
+<script type="text/javascript">
+        var fbUserId;
+        var params;
+        var keyText;
+        var attText;
+        var valText;
+        var dynamodb = null;
+        var docClient = null;
+        var appId = '1168587659901619'; //from facebook
+        var roleArn = 'arn:aws:iam::032276853736:role/DynamoDB'; //from AWS IAM
+        var resultData = null;
+        
+     
+document.getElementById('showTable').onclick = function () {
+	dynamodb = new AWS.DynamoDB({ region: 'us-west-2'});
+	docClient = new AWS.DynamoDB.DocumentClient({ service: dynamodb})
+	
+	var data = "";
+	
+	var params = {
+		TableName: 'Events'
+	};
+	
+	docClient.scan(params, function(err, data) {
+		if (err)
+			console.log(JSON.stringify(err, null, 2));
+		else
+			data += (JSON.stringify(data, null, 2));
+		document.getElementById('body').innerHTML = data;
+	})
+};
+
+document.getElementById('getThis').onclick = function () {
+    dynamodb = new AWS.DynamoDB({ region: 'us-west-2' });
+    docClient = new AWS.DynamoDB.DocumentClient({ service: dynamodb });
+    keyText = document.getElementById("keyValue").value;
+    attText = document.getElementById("attributeText").value;
+    console.log("Key Value: ", keyText);
+    console.log("Attribute: ", attText);
+    params = {
+        TableName: 'Events',
+        Key: {
+            'First Name': keyText
+        },
+        ProjectionExpression: "#a",
+        ExpressionAttributeNames: {
+            '#a': attText
+        }
+    };
+    docClient.get(params, function (err, data) {
+        if (err) 
+        	console.log(err, err.stack);
+   			 
+            else {
+            	
+            	console.log("success, logging data: ");
+            	console.log(data);//shows keys
+            	console.log("attribute 1 is " + data.Item.attributeText)
+            	data += (JSON.stringify(data, null, 2));
+            	document.getElementByID('output').innerHTML = data;
+            }
+    })
+};
+
+document.getElementById('putThis').onclick = function () {
+    dynamodb = new AWS.DynamoDB({ region: 'us-west-2' });
+    docClient = new AWS.DynamoDB.DocumentClient({ service: dynamodb });
+    keyText = document.getElementById("keyValue").value;
+    attText = document.getElementById("attributeText").value;
+    valText = document.getElementById("valueText").value;
+    console.log("Key Value: ", keyText);
+    console.log("Attribute: ", attText);
+    console.log("Value: ", valText);
+    params = {
+        TableName: 'Events',
+        Item: {
+            'First Name': keyText,
+            'Event Type': attText,
+            'Location': valText
+            
+        }
+    };
+    docClient.put(params, function(err, data){
+        if (err) console.log(err);
+        else
+        {
+            resultData = data;
+            console.log(resultData);
+        }
+    })
+};
+
+document.getElementById('deleteThis').onclick = function () {
+    dynamodb = new AWS.DynamoDB({ region: 'us-west-2' });
+    docClient = new AWS.DynamoDB.DocumentClient({ service: dynamodb });
+    keyText = document.getElementById("keyValue").value;
+    console.log("Key Value: ", keyText);
+    params = {
+        TableName: 'Events',
+        Key: {
+            'First Name': keyText
+        }
+    };
+    docClient.delete(params, function(err, data){
+    if(err) console.log(err);
+    else console.log(data);
+    });
+};
+
+
+window.fbAsyncInit = function () {
+    FB.init({ appId: appId });
+
+    document.getElementById('login').onclick = function () {
+    	
+    	dynamodb = new AWS.DynamoDB({ region: 'us-west-2' });
+        docClient = new AWS.DynamoDB.DocumentClient({ service: dynamodb });
+    	
+
+        FB.login(function (response) {
+            if (response.authResponse) {
+                AWS.config.credentials = new AWS.WebIdentityCredentials({ //WIF
+                    RoleArn: roleArn,
+                    ProviderId: 'graph.facebook.com',
+                    WebIdentityToken: response.authResponse.accessToken
+                });
+            }
+            else {
+                console.log("Issue logging in");
+            }
+
+            // Load the FB JS SDK asynchronously
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/all.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        })
+        
+            
+///////////////////////////////////////////////////////////////IMPLEMENT THIS CODE
+
+
+var params = {
+    TableName: "Events",
+    KeyConditionExpression: "First Name = :whatQuery",
+    ExpressionAttributeValues: {
+        ":whatQuery": attText
+    }
+};
+
+docClient.query(params, function(err, data) {
+    if (err)
+        console.log(JSON.stringify(err));
+    else
+        console.log(JSON.stringify(data));
+});
+
+///////////////////////////////////////////////////////////////   
+
+
+    }
+
+}
+
+</script>
+							
+
+				<div id="body"></div>
+				<div id="output"></div>
+				
+				<div class="row ">
+
+				<section class="col-xs-12">
+
+
+				<p class="content">
+																			
+					<p> 
+													
+	
+					
+				</p>
+
+				</section>
+				</div>
+
+
+
+
+	
+	</div>
+
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

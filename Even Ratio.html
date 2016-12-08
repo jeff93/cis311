@@ -1,75 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+
 <title>Even Ratio</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.18.min.js"></script>
+<script id="facebook-jssdk" src="https://connect.facebook.net/en_US/all.js"></script>
+<meta charset="UTF-8">
+
+<meta
+	http-equiv="X-UsA-Compatible"
+	content="IE=edge"
+><meta
+	name="viewport"
+	content="width=device-width, initial-scale=1"
+>
+<link
+	rel="stylesheet"
+	href="css/bootstrap.min.css"
+>
+<link
+	rel="stylesheet"
+	href="css/styles.css"
+>
+
+
+<!-- ----------------------------------------------NAVBAR------------------------------------ -->
+
 </head>
-<nav class="navbar navbar-inverse navbar-fixed top">
-	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed"
-				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-				aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<img alt="Brand"
-				src="http://cdn3.sportngin.com/attachments/photo/5240/9554/Cal_Poly_Pomona_D2_small.png">
+<body class="bgimagepage">
+
+
+	<div class="content container">
+
+		<div class="row ">
+
+			<section class="col-xs-12">
+
+
+				<nav class="bgimage navbar navbar-default navbar-fixed-top">
+					<div class="container">
+						<ul class="nav navbar-nav">
+
+
+<li >
+<button class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn" 
+
+onclick="location.href='index.html'">Home
+</button>
+
+</li>
+
+
+							<li class="dropdown">
+
+								<button
+									type="button"
+									data-toggle="dropdown"
+									id="About"
+									aria-haspopup="true"
+									aria-expanded="true"
+									class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn"
+								>
+									About <span class="caret"></span>
+
+								</button>
+
+								<ul
+									class="dropdown-menu"
+									aria-labelledby="About"
+								>
+
+									<li class="dropdown-header"></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Legal</a></li>
+									<li><a href="#">FAQ</a></li>
+
+								</ul>
+							</li>
+							<li class="dropdown">
+
+								<button
+									type="button"
+									data-toggle="dropdown"
+									id="Category"
+									aria-haspopup="true"
+									aria-expanded="true"
+									class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn"
+								>
+									Go To <span class="caret"></span>
+
+								</button>
+
+								<ul
+									class="dropdown-menu"
+									aria-labelledby="Category"
+								>
+									<li class="dropdown-header">What are you looking for?</li>
+									<li><a href="#">Tonight</a></li>
+									<li><a href="#">Tomorrow</a></li>
+									<li><a href="#">Concerts</a></li>
+									<li><a href="#">Bars / Clubs</a></li>
+									<li><a href="HouseParties.html">House Parties</a></li>
+									<li><a href="PoolParties.html">Pool Parties</a></li>
+									<li><a href="Even Ratio.html">Even Ratio</a></li>
+									<li><a href="21andOver.html">21 & Over</a></li>
+									<li><a href="#">Members Only</a></li>
+									<li><a href="#">? Secret</a></li>
+									<li><a href="proof.html">Proof</a></li>
+									<li><a href="map.html">Map</a></li>
+									<li><a href="hosts.html">Hosts</a></li>
+									<li><a href="security.html">Security</a></li>
+									<li><a href="djs.html">DJs</a></li>
+									<li><a href="chat.html">Chat</a></li>
+								</ul>
+
+							</li>
+
+							<li>
+
+								<button
+									type="button"
+									data-toggle="dropdown"
+									id="Podcast"
+									aria-haspopup="true"
+									aria-expanded="true"
+									class="navbutton btn-xlarge btn btn-info dropdown-toggle navbar-btn"
+								>
+									Podcast <span class="caret"></span>
+
+								</button>
+
+								<ul
+									class="dropdown-menu"
+									aria-labelledby="Podcasts"
+								>
+									<li class="dropdown-header">What are you looking for?</li>
+									<li><a href="#">This Week</a></li>
+									<li><a href="#">All</a></li>
+								</ul>
+
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+			</section>
 		</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse"
-			id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Podcast</a></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown" role="button" aria-haspopup="true"
-					aria-expanded="false">Go To <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Tonight</a></li>
-						<li><a href="#">Tomorrow</a></li>
-						<li><a href="#">Concerts</a></li>
-						<li><a href="#">Bars/Clubs</a></li>
-						<li><a href="#">House Parties</a></li>
-						<li><a href="#">Pool Parties</a></li>
-						<li><a href="#">Even Ratio</a></li>
-						<li><a href="#">21 and Over</a></li>
-						<li><a href="#">Memebers Only</a></li>
-						<li><a href="#">? Secret</a></li>
-						<li><a href="#">Proof</a></li>
-						<li><a href="#">Map</a></li>
-						<li><a href="#">Hosts</a></li>
-						<li><a href="#">Security</a></li>
-						<li><a href="#">DJs</a></li>
-						<li><a href="#">Chat</a></li>
-					</ul>
-					</li>
-			</ul>
+ <h1> Even Ratio: 1:1</h1> 
 
-			<form class="nav navbar-nav navbar-right">
-				<button type="button" class="btn btn-default navbar-btn">Sign
-					in</button>
-			</form>
+<h3> Events Posted here are monitored for even Male and Female ratio.</h3>
 
-		</div>
-		<!-- /.navbar-collapse -->
+<img alt="Party" class="img-responsive" src="https://static.pexels.com/photos/106400/pexels-photo-106400.jpeg">
+
+
+<!-- ----------------------------------------------DYNAMODB INPUT--------------------------------------------- -->
+
+
+	
+<div id="fb-root"></div>
+
+<br/>
+
+<div class="row padding ">
+	
+		<button class = "navbutton btn-large " id="login"> Facebook Login! </button>
+
+	
+</div>
+
+<p> 
+
+
+</p>
+<!-- ----------------------------start of row -->	<div class="row">
+	
+	
+
+<div class = "row">
+
+<div class = "col-xs-3 padding" >
+	First Name:
+	<input id="keyValue" type="text" />
+	<br /> 
+</div>
+
+<div class = "col-xs-3 padding" >
+	
+	Occasion:
+	<input id="attributeText" type="text" />
+	<br /> 
+	
+</div>	
+	
+<div class = "col-xs-3 padding" >
+	
+	Location:
+	<input id="valueText" type="text" />
+	<br />
+</div>	
+
+	
+</div>
+	
+	<div>
+	
+	<br/>
+	
+	|
+	<button class = "navbutton" id="putThis">Post!</button>
+	|
+	<button class = "navbutton" id="getThis">Retreive Post</button>
+	|
+	<button class = "navbutton" id="deleteThis">Delete Post</button>
+	|
+<p>
+
+
+Use the form to post an Event!
+					
+					</p>  
+					
+					<p> or... </p>
+					
+					<p> Use the button below to check for Events! </p>
+					
+					<p> Check it out!</p>
+	
+ <p> <button id="showTable">Show Events</button>
+
+
+</p>
+
+
+
 	</div>
-	<!-- /.container-fluid -->
-</nav>
-<body>
-	<div class="jumbotron">
-		<div class="container">
-			<h1>Even Ratio</h1>
-			<p>Events dedicated with an even ratio, will require management between males and females that enter the event. </p>
+	
+ </div>
+
+<div id="body"></div>
+
+<script type="text/javascript">
+        var fbUserId;
+        var params;
+        var keyText;
+        var attText;
+        var valText;
+        var dynamodb = null;
+        var docClient = null;
+        var appId = '1168587659901619'; //from facebook
+        var roleArn = 'arn:aws:iam::032276853736:role/DynamoDB'; //from AWS IAM
+        var resultData = null;
+       
+     
+document.getElementById('showTable').onclick = function () {
+	dynamodb = new AWS.DynamoDB({ region: 'us-west-2'});
+	docClient = new AWS.DynamoDB.DocumentClient({ service: dynamodb})
+	
+	var data = "";
+	
+	var params = {
+		TableName: 'EvenRatio'
+	};
+	
+	docClient.scan(params, function(err, data) {
+		if (err)
+			console.log(JSON.stringify(err, null, 2));
+		else
+			data += (JSON.stringify(data, null, 2));
+			document.getElementById('body').innerHTML = data;
+	})
+};
+
+document.getElementById('getThis').onclick = function () {
+    dynamodb = new AWS.DynamoDB({ region: 'us-west-2' });
+    docClient = new AWS.DynamoDB.DocumentClient({ service: dynamodb });
+    keyText = document.getElementById("keyValue").value;
+    attText = document.getElementById("attributeText").value;
+    console.log("Key Value: ", keyText);
+    console.log("Attribute: ", attText);
+    params = {
+        TableName: 'EvenRatio',
+        Key: {
+            'First Name': keyText
+        },
+        ProjectionExpression: "#a",
+        ExpressionAttributeNames: {
+            '#a': attText
+        }
+    };
+    docClient.get(params, function (err, data) {
+        if (err) 
+        	console.log(err, err.stack);
+   			 
+            else {
+            	
+            	console.log("success, logging data: ");
+            	console.log(data);//shows keys
+            	console.log("attribute 1 is " + data.Item.attributeText)
+            	//var output = data.Item.attribute1;
+            	l = document.getElementById("output");
+            	l.innerHTML = data.Item.attribute1;
+            }
+    })
+};
+
+document.getElementById('putThis').onclick = function () {
+    dynamodb = new AWS.DynamoDB({ region: 'us-west-2' });
+    docClient = new AWS.DynamoDB.DocumentClient({ service: dynamodb });
+    keyText = document.getElementById("keyValue").value;
+    attText = document.getElementById("attributeText").value;
+    valText = document.getElementById("valueText").value;
+    console.log("Key Value: ", keyText);
+    console.log("Attribute: ", attText);
+    console.log("Value: ", valText);
+    params = {
+        TableName: 'EvenRatio',
+        Item: {
+            'First Name': keyText,
+            'Occasion': attText,
+            'Location': valText
+            
+        }
+    };
+    docClient.put(params, function(err, data){
+        if (err) console.log(err);
+        else
+        {
+            resultData = data;
+            console.log(resultData);
+        }
+    })
+};
+
+document.getElementById('deleteThis').onclick = function () {
+    dynamodb = new AWS.DynamoDB({ region: 'us-west-2' });
+    docClient = new AWS.DynamoDB.DocumentClient({ service: dynamodb });
+    keyText = document.getElementById("keyValue").value;
+    console.log("Key Value: ", keyText);
+    params = {
+        TableName: 'EvenRatio',
+        Key: {
+            'First Name': keyText
+        }
+    };
+    docClient.delete(params, function(err, data){
+    if(err) console.log(err);
+    else console.log(data);
+    });
+};
 
 
-		</div>
+window.fbAsyncInit = function () {
+    FB.init({ appId: appId });
+
+    document.getElementById('login').onclick = function () {
+    	
+    	dynamodb = new AWS.DynamoDB({ region: 'us-west-2' });
+        docClient = new AWS.DynamoDB.DocumentClient({ service: dynamodb });
+    	
+
+        FB.login(function (response) {
+            if (response.authResponse) {
+                AWS.config.credentials = new AWS.WebIdentityCredentials({ //WIF
+                    RoleArn: roleArn,
+                    ProviderId: 'graph.facebook.com',
+                    WebIdentityToken: response.authResponse.accessToken
+                });
+            }
+            else {
+                console.log("Issue logging in");
+            }
+
+            // Load the FB JS SDK asynchronously
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/all.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        })
+        
+            
+///////////////////////////////////////////////////////////////IMPLEMENT THIS CODE
+
+
+var params = {
+    TableName: "EvenRatio",
+    KeyConditionExpression: "First Name = :whatQuery",
+    ExpressionAttributeValues: {
+        ":whatQuery": attText 
+    }
+};
+
+docClient.query(params, function(err, data) {
+    if (err)
+        console.log(JSON.stringify(err));
+    else
+        console.log(JSON.stringify(data));
+});
+
+///////////////////////////////////////////////////////////////   
+
+    }
+
+}
+
+</script>
+							
+				<div id="body"></div>
+				<div id="output"></div>
+				
+				<div class="row ">
+
+				<section class="col-xs-12">
+
+
+				<p class="content">																	
+					<p> 
+													
+			
+					
+				</p>
+
+				</section>
+				</div>
+
+
 	</div>
 
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
